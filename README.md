@@ -1,9 +1,9 @@
-Projekt React z akademie Engeto
+# Projekt React z akademie Engeto
 
-Téma webu
+## Téma webu
 Téma webu je na tobě. Můžeš si vybrat, jakékoli téma chceš. Důležité je, aby tě tvorba stránek bavila. Může se jednat o oblíbený film, knihu, produkt, službu nebo cokoli jiného.
 
-První strana webu
+## První strana webu
 Zde máš vzorovou první stranu webu a jak by měla vypadat. Z obrázku si převezmi pouze strukturu. Obsah je komplet na tobě. Zároveň požadavky na stránku jsou minimální. Pokud chceš přidat více částí, více komponent, tak určitě můžeš. Ber to skutečně jen jako vzor.
 
 Pojď si stránku rozebrat. Nahoře vidíš první část stránky. Zde není nic speciálního až na to, že s každým opětovným načtením stránky se mění žlutě zvýrazněný text. Ve vzorové stránce je to nastavené tak, že při každém načtení stránky se náhodně volí text z pole 3 textů. Texty si stanov jakkoli budeš chtít.
@@ -16,7 +16,7 @@ Takto, pokud je kliknuto na záložku Third.
 
 A tak dále.
 
-Druhá strana webu
+## Druhá strana webu
 Na druhé stránce zkombinuješ 2 věci - formulář a API. Můžeš si vybrat jakékoli API chceš (ale ne ty, které se používaly v kurzu). Podmínkou je, že návštěvník stránky musí zadat údaje pomocí formuláře. Ty následně tyto údaje využiješ při žádosti o informace z API.
 
 Seznam veřejných API najdeš zde: seznam API. Můžeš si další API vygooglit.

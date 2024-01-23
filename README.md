@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Projekt React z akademie Engeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Téma webu
+Téma webu je na tobě. Můžeš si vybrat, jakékoli téma chceš. Důležité je, aby tě tvorba stránek bavila. Může se jednat o oblíbený film, knihu, produkt, službu nebo cokoli jiného.
 
-## Available Scripts
+První strana webu
+Zde máš vzorovou první stranu webu a jak by měla vypadat. Z obrázku si převezmi pouze strukturu. Obsah je komplet na tobě. Zároveň požadavky na stránku jsou minimální. Pokud chceš přidat více částí, více komponent, tak určitě můžeš. Ber to skutečně jen jako vzor.
 
-In the project directory, you can run:
+Pojď si stránku rozebrat. Nahoře vidíš první část stránky. Zde není nic speciálního až na to, že s každým opětovným načtením stránky se mění žlutě zvýrazněný text. Ve vzorové stránce je to nastavené tak, že při každém načtení stránky se náhodně volí text z pole 3 textů. Texty si stanov jakkoli budeš chtít.
 
-### `npm start`
+Další část jsou jen statické komponenty. Jejich obsah je na tobě. Jen poprosíme, ať komponenty obsahují libovolné obrázky (aby to nebyl jen text).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Další částí jsou záložky. Při každém kliknutí na záložku se změní obsah v tmavé částí pod ní. Takto vypadá obsah stránky, pokud je kliknuto na záložku First.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Takto, pokud je kliknuto na záložku Third.
 
-### `npm test`
+A tak dále.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Druhá strana webu
+Na druhé stránce zkombinuješ 2 věci - formulář a API. Můžeš si vybrat jakékoli API chceš (ale ne ty, které se používaly v kurzu). Podmínkou je, že návštěvník stránky musí zadat údaje pomocí formuláře. Ty následně tyto údaje využiješ při žádosti o informace z API.
 
-### `npm run build`
+Seznam veřejných API najdeš zde: seznam API. Můžeš si další API vygooglit.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pokud nenajdeš žádnou inspiraci na internetu, tak můžeš např. využít toto API na generování QR kódů. Zde je endpoint daného API: https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://engeto.cz/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Když se na adresu výše podíváš, tak zjistíš, že můžeš zadat velikost QR kódu a jako data na konci URL zadáš adresu, kam má QR kód směřovat. Adresa výše po naskenování mobilním telefonem směřuje na stránku engeto.cz. Tvým úkolem by bylo, aby si uživatel mohl zadat libovolnou adresu pomocí formuláře a vytvořil se mu odpovídající QR kód.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Takto může vypadat druhá stránka webu, pokud se rozhodneš pro API na generování QR kódu.
 
-### `npm run eject`
+Po zadání URL adresy a kliknutí na tlačítko Generovat QR kód se v pravé části vygeneruje QR kód, který si může návštěvník naskenovat nebo vyfotit a uložit do telefonu.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

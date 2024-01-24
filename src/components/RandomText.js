@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './RandomText.css';
 
 const texts = [
-  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  'Lorem Ipsum has been the industry s standard dummy text ever since the 1500s',
-  'when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+  'Co udělají Češi, když vyhrají mistrovství světa ve fotbale? Vypnou Playstation a jdou spát...',
+  'Neskákej do toho bazénu! Vždyť tam není voda. To nevadí, já neumím plavat.',
+  'Já běhám stovku za 8 sekund! vytahuje se Michal před kamarády. Nesmysl, rekord je 10 sekund! No jo, ale ne když znáš zkratku!',
 ];
 
 const RandomText = () => {

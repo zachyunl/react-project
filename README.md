@@ -50,4 +50,4 @@ Po zadání URL adresy a kliknutí na tlačítko Generovat QR kód se v pravé �
 ![image](https://github.com/zachyunl/react-project/assets/47257941/324c676f-e5ec-404a-836f-88c11d816815)
 
 
-![image](https://github.com/zachyunl/react-project/assets/47257941/324c676f-e5ec-404a-836f-88c11d816815)
+

@@ -42,5 +42,11 @@ Když se na adresu výše podíváš, tak zjistíš, že můžeš zadat velikost
 
 Takto může vypadat druhá stránka webu, pokud se rozhodneš pro API na generování QR kódu.
 
+![image](https://github.com/zachyunl/react-project/assets/47257941/2f3423c9-73f8-4275-a9cf-9f1d7ab5a84e)
+
+
 Po zadání URL adresy a kliknutí na tlačítko Generovat QR kód se v pravé části vygeneruje QR kód, který si může návštěvník naskenovat nebo vyfotit a uložit do telefonu.
+
+![image](https://github.com/zachyunl/react-project/assets/47257941/324c676f-e5ec-404a-836f-88c11d816815)
+
 

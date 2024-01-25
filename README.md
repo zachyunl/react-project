@@ -34,7 +34,7 @@ A tak dále.
 ## Druhá strana webu
 Na druhé stránce zkombinuješ 2 věci - formulář a API. Můžeš si vybrat jakékoli API chceš (ale ne ty, které se používaly v kurzu). Podmínkou je, že návštěvník stránky musí zadat údaje pomocí formuláře. Ty následně tyto údaje využiješ při žádosti o informace z API.
 
-Seznam veřejných API najdeš zde: seznam API. Můžeš si další API vygooglit.
+Seznam veřejných API najdeš zde: [seznam API](https://github.com/public-apis/public-apis). Můžeš si další API vygooglit.
 
 Pokud nenajdeš žádnou inspiraci na internetu, tak můžeš např. využít toto API na generování QR kódů. Zde je endpoint daného API: https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://engeto.cz/
 

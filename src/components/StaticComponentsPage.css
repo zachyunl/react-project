@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .StaticComponentsPage h1 {
+    font-size: 5px;
+    margin-bottom: 20px;
+    color: #9d1414; /* Barva textu pro lepší čitelnost */
+  }
+
+  

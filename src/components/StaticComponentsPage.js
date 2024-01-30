@@ -4,7 +4,7 @@ import StaticComponent from './StaticComponent';
 
 const StaticComponentsPage = () => {
   return (
-    <div>
+    <div classname="container">
       <h1>Stránka se statickými komponentami</h1>
       <StaticComponent imagePath="/images/image1.jpg" text="První statická komponenta" />
       <StaticComponent imagePath="/images/image2.jpg" text="Druhá statická komponenta" />

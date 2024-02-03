@@ -1,15 +1,16 @@
+/* StaticComponent.css */
 .StaticComponent {
     flex: 0 0 23%;
     margin-bottom: 16px;
   }
   
-  .StaticComponent img {
+.StaticComponent img {
     width: 100%;
-    max-height: 500px;
+    height: 300px;
     object-fit: cover;
   }
   
-  .h1 {
+.StaticComponent h1 {
     font-size: 5px;
     margin-bottom: 20px;
     color: #9d1414; /* Barva textu pro lepší čitelnost */

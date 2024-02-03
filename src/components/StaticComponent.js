@@ -1,3 +1,4 @@
+// StaticComponent.js
 import './StaticComponent.css';
 
 const StaticComponent = ({ imagePath, text }) => {

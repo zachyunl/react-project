@@ -1,3 +1,4 @@
+// RandomText.js
 import React, { useEffect, useState } from 'react';
 import './RandomText.css';
 
@@ -24,7 +25,7 @@ const RandomText = () => {
 
   return (
     <div>
-      <h1>Náhodný text:</h1>
+      <h1 className='RandomTexth1'>Náhodný text:</h1>
       <p>
         <span style={{ color: prefixColor }}>{prefixes[texts.indexOf(randomText)]}</span> {randomText}
       </p>

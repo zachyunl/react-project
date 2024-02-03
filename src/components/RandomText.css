@@ -1,4 +1,10 @@
+ /* RandomText.css */
 p {
     font-size: 18px;
     font-weight: bold;
+  }
+
+  .RandomTexth1 {
+    font-size: 28px;
+    color: blueviolet;
   }

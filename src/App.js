@@ -5,6 +5,7 @@ import SecondPage from "./pages/SecondPage"
 import Error from "./pages/Error"
 import SharedLayout from "./pages/SharedLayout"
 
+
 const App = () => {
   return <BrowserRouter>
     <Routes>

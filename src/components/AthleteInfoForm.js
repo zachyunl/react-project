@@ -47,6 +47,7 @@ const AthleteInfoForm = () => {
     event.preventDefault();
     if (name.trim() !== '') {
       setIsLoading(true);
+    //  setName('');
     } else {
       setError('Zadejte jméno sportovce.');
     }
@@ -67,9 +68,14 @@ const AthleteInfoForm = () => {
           <h2>Výsledky hledání:</h2>
           {athletesData.map((athlete, index) => (
             <div key={index}>
-              <h3>Athlete's Data: {athlete.strPlayer}</h3>
-              <p>Nationality: {athlete.strNationality}</p>
+              <h3>Jméno sportovce: {athlete.strPlayer}</h3>
+              <p>Datum narození: {athlete.dateBorn}</p>
+              <p>Národnost: {athlete.strNationality}</p>
               <p>Sport: {athlete.strSport}</p>
+              <p>Tým: {athlete.strTeam}</p>
+
+
+
               {/* Zde můžete zobrazit další informace o sportovci */}
               <hr />
             </div>

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .child {
+    margin-bottom: 20px;
+  }
+  
+  .tabs-container {
+    /* Styly pro Tabs */
+  }

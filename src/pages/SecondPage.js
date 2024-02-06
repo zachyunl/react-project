@@ -7,7 +7,7 @@ const SecondPage = () => {
 
     return (
     <div>
-      <h1>Sports Information</h1>
+      <h1>Informace o sportovci</h1>
       <AthleteInfoForm />
       
     </div>

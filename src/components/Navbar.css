@@ -1,0 +1,26 @@
+/* Navbar.css */
+
+.navbar-container {
+    text-align: center;
+    background-color: #333; /* Barva pozadí menu - můžete upravit podle potřeby */
+    padding: 10px; /* Odsazení pro vzhled */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-list li {
+    margin: 0 10px; /* Odsazení mezi položkami menu - můžete upravit podle potřeby */
+  }
+  
+  .navbar-list a {
+    text-decoration: none;
+    color: white; /* Barva textu v menu - můžete upravit podle potřeby */
+    font-weight: bold;
+    font-size: 16px; /* Velikost písma - můžete upravit podle potřeby */
+  }
+  

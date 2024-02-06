@@ -1,82 +1,80 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import './AthleteInfoForm.css';
 
 const AthleteInfoForm = () => {
   const [name, setName] = useState('');
-  const [athletesData, setAthletesData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [athleteData, setAthleteData] = useState(null);
+  const [loadingState, setLoadingState] = useState('idle');
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setError('');
-        const apiUrl = `https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${encodeURIComponent(name)}`;
-        const response = await fetch(apiUrl);
+  const fetchData = async () => {
+    try {
+      setLoadingState('loading');
+      const apiUrl = `https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${encodeURIComponent(name)}`;
+      const response = await fetch(apiUrl);
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const result = await response.json();
-
-        if (result && result.player) {
-          setAthletesData(result.player);
-        } else {
-          setAthletesData([]);
-          setError('Sportovec nenalezen v databázi.');
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        setError('Chyba při načítání dat.');
-      } finally {
-        setIsLoading(false);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-    };
 
-    if (name && isLoading) {
-      fetchData();
+      const result = await response.json();
+
+      if (result && result.player) {
+        setAthleteData(result.player);
+        setLoadingState('success');
+      } else {
+        setAthleteData(null);
+        setLoadingState('not-found');
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setAthleteData(null);
+      setLoadingState('error');
     }
-  }, [name, isLoading]);
+  };
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setError('');
+    setLoadingState('idle');
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    if (name.trim() !== '') {
-      setIsLoading(true);
-    //  setName('');
+    if (name.trim().length > 0) {
+      fetchData();
+      setName(''); // Vynulování vstupního pole po úspěšném načtení dat
     } else {
-      setError('Zadejte jméno sportovce.');
+      setAthleteData(null);
+      setLoadingState('empty-name');
     }
   };
 
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={handleFormSubmit}>
         <label>
-          <input type="text" placeholder="Jméno sportovce" value={name} onChange={handleNameChange} />
+          <input
+            type="text"
+            placeholder="Jméno sportovce"
+            value={name}
+            onChange={handleNameChange}
+          />
         </label>
         <button type="submit">Odeslat</button>
       </form>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {isLoading && <p>Načítám data...</p>}
-      {athletesData.length > 0 && (
-        <div>
+      {loadingState === 'error' && <p className="error-message">Chyba při načítání dat.</p>}
+      {loadingState === 'loading' && <p className="loading-message">Načítám data...</p>}
+      {loadingState === 'not-found' && <p className="not-found-message">Sportovec nenalezen v databázi.</p>}
+      {loadingState === 'empty-name' && <p className="empty-name-message">Zadejte jméno sportovce.</p>}
+      {athleteData && (
+        <div className="results-container">
           <h2>Výsledky hledání:</h2>
-          {athletesData.map((athlete, index) => (
+          {athleteData.map((athlete, index) => (
             <div key={index}>
               <h3>Jméno sportovce: {athlete.strPlayer}</h3>
               <p>Datum narození: {athlete.dateBorn}</p>
               <p>Národnost: {athlete.strNationality}</p>
               <p>Sport: {athlete.strSport}</p>
               <p>Tým: {athlete.strTeam}</p>
-
-
-
-              {/* Zde můžete zobrazit další informace o sportovci */}
               <hr />
             </div>
           ))}

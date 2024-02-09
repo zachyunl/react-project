@@ -23,7 +23,12 @@ const Tabs = () => {
            <p>Sport je klíčovou součástí zdravého životního stylu a má mnoho pozitivních účinků na fyzické i duševní zdraví jednotlivce. Pravidelná fyzická aktivita přináší celou řadu výhod, které ovlivňují tělo i mysl.</p>
           </>
           }
-          {selectedTab === 2 && <p>Text pro záložku 2</p>}
+          {selectedTab === 2 && 
+          <>          
+          <h2>Záložka 2</h2>
+           <p>Sport je klíčovou součástí zdravého životního stylu a má mnoho pozitivních účinků na fyzické i duševní zdraví jednotlivce. Pravidelná fyzická aktivita přináší celou řadu výhod, které ovlivňují tělo i mysl.</p>
+          </>
+          }
           {selectedTab === 3 && <p>Text pro záložku 3</p>}
           {selectedTab === 4 && <p>Text pro záložku 4</p>}
         </div>

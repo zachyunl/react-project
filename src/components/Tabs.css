@@ -3,3 +3,17 @@
     text-align: left; /* Zarovnání vlevo */
     
   }
+
+.contaner-tabs-text {
+  padding-top: 10px; 
+}  
+
+button {
+  background-color: #A3AB78;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white; /* Barva textu v menu - můžete upravit podle potřeby */
+    font-weight: bold;
+    font-size: 16px; /* Velikost písma - můžete upravit podle potřeby */ 
+} 

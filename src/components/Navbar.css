@@ -2,8 +2,8 @@
 
 .navbar-container {
     text-align: center;
-    background-color: #333; /* Barva pozadí menu - můžete upravit podle potřeby */
-    padding: 10px; /* Odsazení pro vzhled */
+    padding: 2%; /* Odsazení pro vzhled */
+    
   }
   
   .navbar-list {
@@ -18,9 +18,12 @@
   }
   
   .navbar-list a {
+    background-color: #A3AB78;
+    padding: 5px 10px;
+    border-radius: 5px;
     text-decoration: none;
     color: white; /* Barva textu v menu - můžete upravit podle potřeby */
     font-weight: bold;
-    font-size: 16px; /* Velikost písma - můžete upravit podle potřeby */
+    font-size: 20px; /* Velikost písma - můžete upravit podle potřeby */
   }
   

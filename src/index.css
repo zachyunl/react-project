@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #bcd325;
-      }
+  }
 
+body {
+        background-color: #10454F;
+        color: white;
+    }
   

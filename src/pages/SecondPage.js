@@ -1,4 +1,4 @@
-// SecondPage.js
+import './SecondPage.css';
 
 import AthleteInfoForm from '../components/AthleteInfoForm';
 
@@ -6,7 +6,7 @@ import AthleteInfoForm from '../components/AthleteInfoForm';
 const SecondPage = () => {
 
     return (
-    <div>
+    <div className='container-second-page'>
       <h1>Informace o sportovci</h1>
       <AthleteInfoForm />
       

@@ -13,7 +13,7 @@ const FirstPage = () => {
       <div className="child">
         <StaticComponentsPage />
       </div>
-      <div className="child"> {/* CSS třída pro jednotlivé prvky */}
+      <div className="first-tabs"> {/* CSS třída pro jednotlivé prvky */}
         <Tabs />
       </div>
     </div>

@@ -8,6 +8,6 @@
     margin-bottom: 20px;
   }
   
-  .tabs-container {
-    /* Styly pro Tabs */
+  .first-tabs {
+    text-align: left; /* Zarovnání vlevo */
   }

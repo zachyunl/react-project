@@ -75,6 +75,7 @@ const AthleteInfoForm = () => {
               <p>Národnost: {athlete.strNationality}</p>
               <p>Sport: {athlete.strSport}</p>
               <p>Tým: {athlete.strTeam}</p>
+              <p>Foto: {athlete.strThumb}</p>
               <hr />
             </div>
           ))}

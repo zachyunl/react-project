@@ -1,0 +1,23 @@
+h2, p {
+    padding-bottom:15px;
+}
+
+.container-error {
+    padding-left: 20px;
+  }
+
+.container-error a:link {
+    color: #0000ff; /* modrá barva */
+  }
+  
+.container-error a:visited {
+    color: #008000; /* zelená barva */
+  }
+  
+.container-error a:hover {
+    color: #ffff00; /* žlutá barva */
+  }
+  
+.container-error a:active {
+    color: #800000; /* fialová barva */
+  }
